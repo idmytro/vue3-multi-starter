@@ -1,3 +1,5 @@
-# Vue 3 + Vite
+# Vite + Vue 3
 
-npx degit idmytro/vue3-multi-starter/minimal myproject
+```
+npx degit idmytro/vue3-multi-starter/markdown myproject
+```
