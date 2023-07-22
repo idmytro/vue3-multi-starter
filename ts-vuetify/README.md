@@ -1,44 +1,7 @@
-# default
+# ts-vuetify
 
-## Project setup
+pnpm create vuetify
 
-```
-# yarn
-yarn
+`+` ts
 
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+npx degit idmytro/vue3-multi-starter/ts-vuetify myproject
