@@ -17,6 +17,7 @@
     "eslint": "^8.42.0",
     "eslint-plugin-no-autofix": "^1.2.3",
     "typescript": "5.0.4",
+    "unocss": "^0.53.6",
     "vite": "^4.2.0",
     "vue-tsc": "^1.2.0"
   }
