@@ -1,5 +1,5 @@
 # Vue 3 + Vite + TS
 
 ```
-npx degit idmytro/vue3-multi-starter/ts-eslintAntfu myproject
+npx degit idmytro/vue3-multi-starter/ts-eslintAntfu-2024 myproject
 ```
