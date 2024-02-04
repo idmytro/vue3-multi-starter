@@ -4,7 +4,7 @@
   "typescript": true,
   "tailwind": {
     "config": "tailwind.config.cjs",
-    "css": "src/assets/index.css",
+    "css": "src/shadcn.css",
     "baseColor": "slate",
     "cssVariables": true
   },
