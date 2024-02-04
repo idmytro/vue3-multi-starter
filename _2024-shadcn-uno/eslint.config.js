@@ -21,10 +21,6 @@ export default antfu(
 
       'unused-imports/no-unused-imports': 0, // look below
       'no-autofix/unused-imports/no-unused-imports': 2,
-
-      'import/newline-after-import': [1, {
-        considerComments: false,
-      }],
     },
   },
 )
