@@ -37,6 +37,12 @@ devDependencies:
   unocss:
     specifier: ^0.58.3
     version: 0.58.3(postcss@8.4.33)(vite@5.0.11)
+  unocss-preset-animations:
+    specifier: ^1.0.1
+    version: 1.0.1(@unocss/preset-wind@0.58.3)(unocss@0.58.3)
+  unocss-preset-shadcn:
+    specifier: ^0.2.3
+    version: 0.2.3(unocss-preset-animations@1.0.1)(unocss@0.58.3)
   unplugin-auto-import:
     specifier: ^0.17.3
     version: 0.17.3
@@ -3599,6 +3605,26 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.10
+    dev: true
+
+  /unocss-preset-animations@1.0.1(@unocss/preset-wind@0.58.3)(unocss@0.58.3):
+    resolution: {integrity: sha512-9ev3+1+0lAMgkqRa2z1z1GBtvJRHrzL1so/tLpiBcFqfDWRUg/S4jqS0xFXQkfMEWIzvRJDGgxbep4bvm/Db/Q==}
+    peerDependencies:
+      '@unocss/preset-wind': '>= 0.56.0 < 1'
+      unocss: '>= 0.56.0 < 1'
+    dependencies:
+      '@unocss/preset-wind': 0.58.3
+      unocss: 0.58.3(postcss@8.4.33)(vite@5.0.11)
+    dev: true
+
+  /unocss-preset-shadcn@0.2.3(unocss-preset-animations@1.0.1)(unocss@0.58.3):
+    resolution: {integrity: sha512-bmc4gCAKKeQP1I7FAU2OLqEoFDbSutWiD8/cEqZX6L2qVcMb/Hm3Cp4Q9PmIGSBz7hZYp3L8dSiJFW36vCPXRQ==}
+    peerDependencies:
+      unocss: '>= 0.56.0 < 1'
+      unocss-preset-animations: ^1.0.1
+    dependencies:
+      unocss: 0.58.3(postcss@8.4.33)(vite@5.0.11)
+      unocss-preset-animations: 1.0.1(@unocss/preset-wind@0.58.3)(unocss@0.58.3)
     dev: true
 
   /unocss@0.58.3(postcss@8.4.33)(vite@5.0.11):
