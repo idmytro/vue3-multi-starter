@@ -21,6 +21,7 @@
     "@antfu/eslint-config": "^2.6.2",
     "@types/node": "^20.11.16",
     "@unocss/transformer-directives": "^0.58.3",
+    "@unocss/transformer-variant-group": "^0.58.5",
     "@vitejs/plugin-vue": "^5.0.3",
     "eslint": "^8.56.0",
     "eslint-plugin-no-autofix": "^1.2.3",
