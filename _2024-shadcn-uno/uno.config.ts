@@ -7,6 +7,7 @@ import { presetShadcn } from 'unocss-preset-shadcn'
 export default defineConfig({
   transformers: [
     transformerDirectives(),
+    // @ts-expect-error transformerVariantGroup is not yet typed
     transformerVariantGroup(),
   ],
   presets: [
