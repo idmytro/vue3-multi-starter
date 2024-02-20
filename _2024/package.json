@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.js,.vue"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@unocss/reset": "^0.58.3",
