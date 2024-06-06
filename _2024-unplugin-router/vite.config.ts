@@ -1,21 +1,42 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import UnoCSS from 'unocss/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import VueRouter from 'unplugin-vue-router/vite'
+import { fileURLToPath, URL } from 'node:url'
 
+import { defineConfig } from 'vite'
+import VueRouter from 'unplugin-vue-router/vite'
+import Vue from '@vitejs/plugin-vue'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import Markdown from 'unplugin-vue-markdown/vite'
+import UnoCSS from 'unocss/vite'
+
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    // must be before Vue
     VueRouter({
-      /* options */
-    }),
-    vue(),
-    UnoCSS(),
-    AutoImport({
-      imports: [
-        'vue',
+      logs: true,
+      routesFolder: [
+        {
+          src: 'src/pages',
+          // make sure to exclude nested folders that are handled by other rules
+          // or you will have the same route registered twice
+          exclude: 'src/pages/docs',
+        },
+        {
+          src: 'src/pages/docs',
+          extensions: ['.md', '.vue'],
+          path: 'docs/[lang]/',
+        },
       ],
-      dts: './src/auto-imports.d.ts',
     }),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
+    UnoCSS(),
+    Markdown({}),
+    VueDevTools(),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })
