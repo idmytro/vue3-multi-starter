@@ -13,3 +13,9 @@ pnpm install
 ```sh
 pnpm run dev
 ```
+
+##
+
+```sh
+npx degit idmytro/vue3-multi-starter/_2024-unplugin-router myproject
+```
