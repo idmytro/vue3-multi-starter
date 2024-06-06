@@ -3,6 +3,10 @@ import noAutofix from 'eslint-plugin-no-autofix'
 
 export default antfu(
   {
+    files: ['tsconfig.json'],
+    rules: { 'jsonc/sort-keys': 0 },
+  },
+  {
     plugins: {
       'no-autofix': noAutofix,
     },
